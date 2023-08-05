@@ -27,7 +27,7 @@
   padding: 30px;
 }
 .about-me-description {
-  font-size: 12px;
+  font-size: 13px;
 }
 .about-me-highlights {
   margin: 80px 0;
@@ -41,7 +41,7 @@
   display: flex;
   align-items: center;
   margin: 5px 0;
-  font-size: 12px;
+  font-size: 13px;
 }
 .highlight-blob {
   height: 12px;

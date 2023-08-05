@@ -68,9 +68,11 @@
   transition: 1s ease-out;
 }
 
+
+
 .colz .cols-icon i {
   color: white;
-  padding: 8px;
+  padding: 20px;
   padding-left: 0px;
 }
 .colz .cols-icon i:hover {

@@ -38,78 +38,88 @@ const Resume = (props) => {
         <div className="resume-heading-description">
           <span>{props.description ? props.description : ""}</span>
         </div>
+        <div className="resume-heading-description linked">
+          <span>
+            <a href={props.links ? props.links : ""}>
+              {props.LinkTitle ? props.LinkTitle : ""}
+            </a>
+            </span>
+        </div>
       </div>
     );
   };
 
-  /* STATIC RESUME DATA FOR THE LABELS*/
+  /* STATIC RESUME DATA FOR THE LABELS */
   const resumeBullets = [
-    { label: "Education", logoSrc: "education.svg" },
-    { label: "Work History", logoSrc: "work-history.svg" },
-    { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
-    { label: "Interests", logoSrc: "interests.svg" },
+    { label: "Education", logoSrc: "https://cdn-icons-png.flaticon.com/512/182/182942.png" },
+    { label: "Work History", logoSrc: "https://icons.iconarchive.com/icons/dtafalonso/android-l/512/Settings-L-icon.png" },
+    { label: "Programming Skills", logoSrc: "https://cdn.iconscout.com/icon/free/png-256/free-code-280-460136.png?f=webp" },
+    { label: "Projects", logoSrc: "https://cdn-icons-png.flaticon.com/512/1087/1087815.png" },
+    { label: "Achievements", logoSrc: "https://cdn-icons-png.flaticon.com/512/1378/1378582.png " },
+    { label: "Interests", logoSrc: "https://png.pngtree.com/element_our/sm/20180517/sm_5afd3ecdc09db.jpg" },
   ];
 
   //here we have
   const programmingSkillsDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
+    { skill: "C/C++", ratingPercentage: 85 },
+    { skill: "Python", ratingPercentage: 85 },
+    { skill: "Embedded JavaScript", ratingPercentage: 85 },
     { skill: "React Native", ratingPercentage: 85 },
     { skill: "Express JS", ratingPercentage: 89 },
     { skill: "Node JS", ratingPercentage: 89 },
     { skill: "Mongo Db", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "Machine Learning", ratingPercentage: 20 },
+    { skill: "HTML/CSS", ratingPercentage: 80 },
+    { skill: "JavaScript", ratingPercentage: 80 },
   ];
 
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "Aug 2023", toDate: "Sept 2023" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
       subHeading: "Technologies Used: React JS, Bootsrap",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Green Delight - Get Organic Product at your Doorstep",
+      duration: { fromDate: "Mar 2023", toDate: "April 2023" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
+        "An ecommerce application designed to sell organic products online directly from Farmer to Customer",
       subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js.",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Olympic Fit",
+      duration: { fromDate: "July 2023", toDate: "Aug 2023" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Implemented ML based Random Forest Classifier and Logistic Regression to predict health status of athletes.",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: HTML, CSS, JavaScript, Bootstrap, Machine Learning, Flask.",
     },
   ];
 
   const resumeDetails = [
+    // education
     <div className="resume-screen-container" key="education">
       <ResumeHeading
-        heading={"University of Legon Accra, Ghana"}
-        subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
-        fromDate={"2014"}
-        toDate={"2018"}
+        heading={"National Institute of Technology (NIT) Jamshedpur"}
+        subHeading={"BACHELOR OF TECHNOLOGY IN Computer Science and Engineering"}
+        fromDate={"2021"}
+        toDate={"2025"}
       />
 
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
+        heading={"Kendriya Vidyalaya Namkum, Jharkhand"}
+        subHeading={"Class XII"}
+        fromDate={"2020"}
+        toDate={"2021"}
       />
       <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={"Kendriya Vidyalaya"}
+        subHeading={"High School"}
+        fromDate={"2012"}
+        toDate={"2019"}
       />
     </div>,
 
@@ -117,34 +127,19 @@ const Resume = (props) => {
     <div className="resume-screen-container" key="work-experience">
       <div className="experience-container">
         <ResumeHeading
-          heading={"Ehizeex Technoloy"}
-          subHeading={"FULL STACK DEVELOPER INTERN"}
-          fromDate={"2021"}
+          heading="Web Team NIT Jamshedpur"
+          subHeading="I am an active member of club"
+          fromDate={"Feb 2023"}
           toDate={"Present"}
         />
-        <div className="experience-description">
-          <span className="resume-description-text">
-            Currently working as MERN stack web and mobile developer and also an
-            online instructor on udemy.
-          </span>
         </div>
-        <div className="experience-description">
-          <span className="resume-description-text">
-            - Developed an ecommerce website for client with the dashboard for
-            managing the products, managing reviews, users, payment etc. .
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - Integrated the web app with backend services to create new user
-            onboarding application with dynamic form content.{" "}
-          </span>
-          <br />
-          <span className="resume-description-text">
-            - I stretch my mental capacity to develope UI as per the given
-            designs.
-          </span>
-          <br />
-        </div>
+        <div className="experience-container">
+        <ResumeHeading
+          heading="PCON- Programming Club NIT Jamshedpur"
+          subHeading="Conducted sessions on HTML/CSS"
+          fromDate={"March 2023"}
+          toDate={"Present"}
+        />
       </div>
     </div>,
 
@@ -181,19 +176,44 @@ const Resume = (props) => {
       ))}
     </div>,
 
+    /* Achievements */
+    <div className="resume-screen-container" key="interests">
+      <ResumeHeading
+        heading="Regionalist of Solving for India Hackathon organised by GFG powered by Goolge Cloud and AMD"
+        LinkTitle="View Certificate"
+        links="https://drive.google.com/file/d/1XCgYRg81tVi-nc1xkgKpizGVEoXQieCb/view"
+      />
+      <ResumeHeading
+        heading="Got rank 37 in Codechef's starter 67C."
+      />
+      <ResumeHeading
+        heading="Got rank 85 in Codathon by NIT Bhopal"
+        LinkTitle="View Certificate"
+        links="https://drive.google.com/file/d/1ZEUCLQTSAkg6lu4393H5AvbEudpgjKqH/view"
+      />
+      <ResumeHeading
+        heading="Stood rank 1908 in Google CODEJAM Round A."
+        LinkTitle="View Certificate"
+        links="https://drive.google.com/file/d/1k8QnCTAah9aqlVY7X1536FsH2-W-GSpy/view"
+      />
+      <ResumeHeading
+        heading="Stood rank 15 March CodeKarma held by PCON, NIT Jamshedpur"
+      />
+    </div>,
+
     /* Interests */
     <div className="resume-screen-container" key="interests">
       <ResumeHeading
-        heading="Teaching"
-        description="Apart from being a tech enthusiast and a code writer, i also love to teach people what i know simply because i believe in sharing."
+        heading="Badminton"
+        description="I am an avid Badminton player and a proud member of my college's Official Badminton Club, dedicated to honing my skills on the court."
       />
       <ResumeHeading
         heading="Music"
         description="Listening to soothing music is something i can never compromise with, skimming through Spotify's pop songs charts is at times the best stress reliever that i can get my hands on."
       />
       <ResumeHeading
-        heading="Competitive Gaming"
-        description="I like to challenge my reflexes a lot while competing in football games, pushing the rank and having interactive gaming sessions excites me the most."
+        heading="Mythology"
+        description="Indian mythology captivates me with its rich tapestry of gods, goddesses, and epic tales that continue to inspire and fascinate."
       />
     </div>,
   ];
@@ -220,7 +240,8 @@ const Resume = (props) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`).default}
+          // src={require(`../../assets/Resume/` + bullet.logoSrc).default}
+          src= {bullet.logoSrc}
           alt="B"
         />
         <span className="bullet-label">{bullet.label}</span>
