@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
   justify-content: center;
-  height: 149px;
+  height: 85px;
   color: var(--white);
 }
 .header-parent {
@@ -13,9 +13,11 @@
   color: var(--white);
 }
 .header-logo {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Poppins ExtraBold";
-  color: var(--white);
+  color: transparent;
+  background-image: url("./../../../assets/Home/logo.png");
+  background-size: cover;
 }
 .header-options {
   display: flex;

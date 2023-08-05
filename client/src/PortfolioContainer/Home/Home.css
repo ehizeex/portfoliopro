@@ -3,5 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 670px;
-  background-image: url("../../assets/Home/bg.jpg");
+  /* background-image: url("../../assets/Home/bg.jpg"); */
+  background-image: url("https://t3.ftcdn.net/jpg/03/22/69/00/360_F_322690073_C3HGQDDRUmwHrDgf28PIRtXWFeWyBaLD.jpg");
+  background-size: cover;
 }

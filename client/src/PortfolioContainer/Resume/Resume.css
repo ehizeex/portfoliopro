@@ -74,7 +74,7 @@
 }
 
 .bullet-logo {
-  height: 16px;
+  height: 20px;
   margin: 0 30px 0 0;
 }
 
@@ -148,6 +148,11 @@
   font-size: 14px;
   border-radius: 14px;
   color: var(--white);
+}
+
+.linked{
+  text-decoration:solid;
+  color: red;
 }
 
 .skill-parent {
