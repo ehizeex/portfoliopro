@@ -30,7 +30,7 @@
 }
 
 .primary-text{
-    color: (--white);
+    color: var(--white);
 }
 
 .highlighted-text{
@@ -39,7 +39,7 @@
 
 .profile-role-tagline{
     font-size:19px;
-    margin: 5x 0 0 0;
+    margin: 5x 0px 0px 0px;
     font-family: "Poppins Light";
 }
 .profile-options .highlighted-btn{
@@ -81,6 +81,14 @@
     padding-left: 0px;
 }
 
+.profile-options{
+    display:flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.profile-options button{
+    margin-top: 0px;
+}
 @media  screen and (max-width: 1110px) {
     .profile-picture{
         margin: 0 0 0 88px;

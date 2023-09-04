@@ -61,75 +61,78 @@ export default function Resume(props) {
 
   ];
   const programmingSkillsDetails = [
+      {skill:'Python', ratingPercentage:80},
+      {skill:'Java', ratingPercentage:85},
+      {skill:'C/CPP', ratingPercentage:70},
+      {skill:'MATLAB', ratingPercentage:60},
     {skill:'JavaScript', ratingPercentage:85},
     {skill:'React JS', ratingPercentage:80},
     {skill:'React Native', ratingPercentage:85},
     {skill:'Express JS', ratingPercentage:89},
-    {skill:'Node JS', ratingPercentage:70},
-    {skill:'Mongo DB', ratingPercentage:85},
-    {skill:'Java', ratingPercentage:85},
-    {skill:'HTML', ratingPercentage:78},
-    {skill:'CSS', ratingPercentage:70},
+    {skill:'SQL Server', ratingPercentage:85},
+    {skill:'HTML/CSS', ratingPercentage:78},
+
   ];
 
   const projectsDetails = [
     {
-        title:'Personal Portfolio Websit',
-        duration: {fromDate:"2022", toDate:"2023"},
-        description:"A Personal Portfolio website to showcase all my details and projects at one place.",
-        subHeading: "Technologies Used: React JS, Bootsrap",
+        title:'Bitcoin Price Prediction',
+        duration: { fromDate: "June 2023", toDate: "September 2023" },
+        description:"Bitcoin Price Prediction using News Sentiment Analysis.",
+        subHeading: "Technologies Used: LSTM , Textblob , Deep Learning , Python",
 
     },
     {
-        title: "Android Music Player ",
-        duration: { fromDate: "2020", toDate: "2021" },
+        title: "Pitch Detection",
+        duration: { fromDate: "February 2023", toDate: "March 2023" },
         description:
-          "An ecommerce application designed to sell products online wth payment system integration",
+          "Detecting and plotting pitch contour of a given audio file using AMDF and Autocorrelation and Cepstrum methods",
         subHeading:
-          "Technologies Used:  Java, Android Studio, UI Desing",
+          "Technologies Used:  MATLAB, AMDF, CEPSTRUM, AUTOCORRELATION",
     },
     {
-      title: "Ecommerce Website ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Ngram ",
+      duration: { fromDate: "April 2023", toDate: "May 2023" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "Creating a random string of words of the corpus, whose length is less than 5 words,\n" +
+          "and then calculating the probability of occurrence of this string of words assuming the current mini corpus and Bigram approximation.",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used: Python.",
     },
   ]
   const resumeDetails = [
     <div className='resume-screen-container' key='education'>
-      <ResumeHeading heading={"KNTU Universito Of technology, Iran"}
-                subHeading={"BACHELOR OF SCIENCE INFORMATION TECHNOLOGY"}
+      <ResumeHeading heading={"K. N. Toosi University Of Technology, Iran"}
+                subHeading={"BACHELOR OF Computer Engineering"}
+                description={" Cumulative GPA : 17.68/20.0 - Last 60 Credits GPA : 18.8/20.0"}
                 fromDate={"2019"}
                 toDate={"2023"}
         />
+      {/*<ResumeHeading*/}
+      {/*  heading={"National Youth Service Corps"}*/}
+      {/*  subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}*/}
+      {/*  fromDate={"2019"}*/}
+      {/*  toDate={"2020"}*/}
+      {/*/>*/}
       <ResumeHeading
-        heading={"National Youth Service Corps"}
-        subHeading={"Ministry Of Science And Technogy. Uyo Akwa Ibom State"}
-        fromDate={"2019"}
-        toDate={"2020"}
-      />
-      <ResumeHeading
-        heading={"High School "}
-        subHeading={"Command Secondary School Mbiri"}
-        fromDate={"2007"}
-        toDate={"2012"}
+        heading={"High school diploma in mathematics and physics"}
+        subHeading={"Shahid Bahonar Leading High School"}
+        description={"Cumulative GPA: 19.43/20"}
+        fromDate={"2018"}
+        toDate={"2019"}
       />
     </div>,
     <div className='resume-screen-container' key='work-experience'>
       <div className='experience-container'> 
-        <ResumeHeading heading={"MCP"} subHeading={"FULL STACK DEVELOPER"}  fromDate={'2024'} toDate={'2025'}/>
+        <ResumeHeading heading={"Freelance Programming"} subHeading={"FRONT END DEVELOPER/Web Developer"}  fromDate={'2020'} toDate={'Present'}/>
         <div className='experience-description'>
           <span className='resume-description-text'>
-              Currently working as MERN stack web and mobile developer and also an
-              online instructor on udemy.
+             - Developing Web Applications.
           </span>
         </div>
         <div className='experience-description'>
           <span className='resume-description-text'>
-          - Developed an ecommerce website for client with the dashboard for
-              managing the products, managing reviews, users, payment etc. .
+               - Working with various frameworks such as React JS and Express JS.
           </span>
           <br/>
           <span className='resume-description-text'>
@@ -138,8 +141,7 @@ export default function Resume(props) {
           </span>
           <br/>
           <span className="resume-description-text">
-              - I stretch my mental capacity to develope UI as per the given
-              designs.
+              - Android Programming in Android Studio.
           </span>
           <br/>
         </div>
@@ -170,9 +172,12 @@ export default function Resume(props) {
         ))}
       </div>,
       <div className='resume-screen-container' key='interests'>
-        <ResumeHeading heading={"Teaching"} description={'Apart from being a tech'}/>
-        <ResumeHeading heading={"Music"} description={'Apart from being a tech'}/>
-        <ResumeHeading heading={"Competetive Gaming"} description={'Apart from being a tech'}/>
+        <ResumeHeading heading={"Machine Learning and Deep Learning"} description={'LSTM, GRU, SVM, Decision Tree'}/>
+        <ResumeHeading heading={"Natural Language Processing"} description={'Text Sentiment Analysis'}/>
+        <ResumeHeading heading={"Speech Processing"} description={'pitch detection and Speech Recognition'}/>
+        <ResumeHeading heading={"Graphs "} description={'Community Detection, Social Graphs, most influential nodes in social networks'}/>
+          <ResumeHeading heading={"Computer Vision"} description={'Object Detection'}/>
+
       </div>
      
   ];

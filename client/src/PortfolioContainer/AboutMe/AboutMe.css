@@ -17,6 +17,16 @@
     width: 100%;
     box-shadow: 0 0px 20px -2px #1f2235;
 }
+.about-me-options{
+    margin-top:2rem;
+    display: flex;
+}
+.about-me-options button{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top: 0px !important;
+}
 
 .about-me-profile{
     width: 50%;

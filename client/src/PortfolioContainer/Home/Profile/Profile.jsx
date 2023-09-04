@@ -10,18 +10,18 @@ export default function Profile() {
             <div className="profile-details">
                 <div className="colz">
                     <div className="colz-icon">
-                        <a href="#" className="">
-                            <i className="fa fa-facebook-square" />
+                        <a href="https://www.linkedin.com/in/laya-fakher-539473244" className="">
+                            <i className="fa fa-linkedin" />
                         </a>
-                        <a href="#" className="">
-                            <i className="fa fa-google-plus-square"/>
+                        <a href="https://github.com/layafakher/" className="">
+                            <i className="fa fa-github" />
                         </a>
-                        <a href="#" className="">
+                        <a href="https://www.instagram.com/laya_bluece?utm_source=qr&r=nametag" className="">
                             <i className="fa fa-instagram"/>
                         </a>
-                        <a href="#" className="">
-                            <i className="fa fa-twitter"/>
-                        </a>   
+                        {/*<a href="#" className="">*/}
+                        {/*    <i className="fa fa-twitter"/>*/}
+                        {/*</a>   */}
                     </div>
                 </div>
                 <div className="profile-details-name">
@@ -37,19 +37,19 @@ export default function Profile() {
                             <TypeAnimation 
                             repeat={Infinity}
                             sequence={[
-                                "Ethutiastic Dev  😎",
+                                "Enthusiastic Student 🎓",
                                 1000,
-                                "Full Stack Developer 💻",
+                                "Front End Developer 💻",
                                 1000,
-                                "Mern Stack Dev 📱",
+                                "Hard-Working Teacher 🎓",
                                 1000, 
-                                "React/React Native Dev 🌐",
+                                "React/React JS Dev 🌐",
                                 1000,
                             ]}
                             />
                         </h1>
                         <span className="profile-role-tagline">
-                        Knack of building applications with front and back end operations.
+                        Hello and Welcome to my webpage.Here you can find information about me.
                         </span>
                     </span>
                 </div>
@@ -58,7 +58,7 @@ export default function Profile() {
                         {""}
                         Hire Me{" "}
                     </button>
-                    <a href="Resume.pdf" download="Ehiedu ehizcv.pdf">
+                    <a href="layafakher.pdf" download="layafakher.pdf">
                         <button className="btn highlighted-btn">
                             Get Resume
                         </button>

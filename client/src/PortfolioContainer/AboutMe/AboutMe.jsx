@@ -12,13 +12,13 @@ export default function AboutMe(props) {
 
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
-        description: 'Full stack web and mobile developer with background knowledge of MERN stacks with redux, along with a knack of building applications with utmost efficiency. Strong professional with a BSC willing to be an asset for an organization.',
+        description: 'I\'m Laya, really curious about computer science and always excited to learn. I helped students as a teaching assistant and got better at programming during two years freelancing. I\'m super interested in data science,machine learning, natural language processing and web programming. Teaching is my thing too – I love sharing what I know to help others. This mix of techie curiosity and a passion for teaching drives me toward a future full of new ideas.',
         highlights :{
             bullets: [
-                "Full Stack web and mobile development",
+                "Web and mobile development",
                 "Interactive Front End as per the design",
                 "React and React Native",
-                "Redux for State Mnanagement",
+                "Redux for State Management",
                 "Building REST API",
                 "Managing database",
               ],
@@ -55,12 +55,12 @@ export default function AboutMe(props) {
                         </div>
                         {renderHighlights()}
                     </div>
-                    <div className='about-me-options'>
+                    <div className='about-me-options' >
                         <button className="btn primary-btn" onClick={ScrollService.scrollHandler.scrollHireMeScreen} >
                             {""}
                             Hire Me{" "}
                         </button>
-                        <a href="Resume.pdf" download="Ehiedu ehizcv.pdf">
+                        <a href="layafakher.pdf" download="layafakher.pdf">
                             <button className="btn highlighted-btn">
                                 Get Resume
                             </button>

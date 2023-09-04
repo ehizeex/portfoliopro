@@ -9,6 +9,7 @@ import Animations from "../../Utilities/Animations";
 import React from "react";
 import lady from '../../../src/img/Testimonial/lady.png'
 import mike from '../../../src/img/Testimonial/mike.png'
+import man from '../../../src/img/Testimonial/man.png'
 
 
 export default function Testimonial(props) {
@@ -56,9 +57,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left"/>
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                        I would like to express my utmost satisfaction with your punctuality in completing tasks. Your ability to consistently deliver work on time is truly commendable and adds a great sense of reliability.
                       <i className='fa fa-quote-right'/>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -80,9 +79,9 @@ export default function Testimonial(props) {
                     </ul>
                   </div>
                   <div className="client-info">
-                    <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InanGlobal</p>
+                    <img src={man} alt='no internet connection'></img>
+                    <h5>Ali </h5>
+                    <p>Programmer</p>
                   </div>
                 </div>
               </div>
@@ -91,44 +90,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left"/>
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
-                      <i className='fa fa-quote-right'/>
-                    </p>
-                    <ul className='stars list-unstyled'>
-                        <li>
-                            <i className='fa fa-star'/>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'/>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'/>
-                        </li>
-                        <li>
-                            <i className='fa fa-star-half-alt'/>
-                        </li>
-                        <li>
-                            <i className='fa fa-star'/>
-                        </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    <img src={lady} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InanGlobal</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
-                    <p>
-                      <i className="fa fa-quote-left"/>
-                      I patronized Ehizeex and when He delivered, I honestly
-                      fell in love with the project He is a very honest guy and
-                      he delivers ontime.
+                        I wanted to take a moment to appreciate your commitment to keeping your promises. Your trustworthiness and ability to fulfill your commitments make it a pleasure to work with you.
                       <i className='fa fa-quote-right'/>
                     </p>
                     <ul className='stars list-unstyled'>
@@ -151,8 +113,39 @@ export default function Testimonial(props) {
                   </div>
                   <div className="client-info">
                     <img src={mike} alt='no internet connection'></img>
-                    <h5>Daisy Dominic</h5>
-                    <p>CEO InanGlobal</p>
+                    <h5>Hossein</h5>
+                    <p>Software Developer</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left"/>
+                        I am beyond grateful for the exceptional teaching provided by you. Your ability to break down complex concepts into easily digestible pieces made learning a joy rather than a chore.   </p>
+                    <ul className='stars list-unstyled'>
+                        <li>
+                            <i className='fa fa-star'/>
+                        </li>
+                        <li>
+                            <i className='fa fa-star'/>
+                        </li>
+                        <li>
+                            <i className='fa fa-star'/>
+                        </li>
+                        <li>
+                            <i className='fa fa-star-half-alt'/>
+                        </li>
+                        <li>
+                            <i className='fa fa-star'/>
+                        </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={lady} alt='no internet connection'></img>
+                    <h5>Naeemeh Beigzadeh</h5>
+                    <p>Computer Science Student</p>
                   </div>
                 </div>
               </div>

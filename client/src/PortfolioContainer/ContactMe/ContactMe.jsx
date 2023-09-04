@@ -79,52 +79,68 @@ export default function ContactMe(props) {
                   ]}
                   />
               </h2>
-              <a href="#" className="">
-                <i className="fa fa-facebook-square" />
-              </a>
-              <a href="#" className="">
-                  <i className="fa fa-google-plus-square"/>
-              </a>
-              <a href="#" className="">
-                  <i className="fa fa-instagram"/>
-              </a>
-              <a href="#" className="">
-                  <i className="fa fa-twitter"/>
-              </a>  
+              {/*<a href="#" className="">*/}
+              {/*  <i className="fa fa-facebook-square" />*/}
+              {/*</a>*/}
+              {/*<a href="#" className="">*/}
+              {/*    <i className="fa fa-google-plus-square"/>*/}
+              {/*</a>*/}
+              {/*<a href="#" className="">*/}
+              {/*    <i className="fa fa-instagram"/>*/}
+              {/*</a>*/}
+              {/*<a href="#" className="">*/}
+              {/*    <i className="fa fa-twitter"/>*/}
+              {/*</a>  */}
+                <a href="https://www.linkedin.com/in/laya-fakher-539473244" className="">
+                    <i className="fa fa-linkedin" />
+                </a>
+                <a href="https://github.com/layafakher/" className="">
+                    <i className="fa fa-github" />
+                </a>
+                <a href="https://www.instagram.com/laya_bluece?utm_source=qr&r=nametag" className="">
+                    <i className="fa fa-instagram"/>
+                </a>
             </div>
-            <div className="back-form">
-                <div className="img-back">
-                    <h4>
-                      Send Your Email Here!
-                    </h4>
-                    <img src={imgBack} alt="No internet connection"/>
-                </div>
-                <form className="" onSubmit={submitForm}>
-                    <p>
-                        {banner}
-                    </p>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" name="" id="name" onChange={handleName} value={name} />
-                    <label htmlFor="email">Email</label>
-                    <input type="email" id="email" onChange={handleEmail} value={email} />
-                    <label htmlFor="message">Message</label>
-                    <textarea type="text" name="" id="message" value={message} onChange={handleMessage}/>
+            <div className="buttons-container">
+                <button className="button-arounder">
+                    <a href="mailto:laya.fakher@gmail.com" >
+                        Email Me
+                    </a>
+                </button>
+            </div>
+            {/*<div className="back-form">*/}
+            {/*    <div className="img-back">*/}
+            {/*        <h4>*/}
+            {/*          Send Your Email Here!*/}
+            {/*        </h4>*/}
+            {/*        <img src={imgBack} alt="No internet connection"/>*/}
+            {/*    </div>*/}
+            {/*    <form className="" onSubmit={submitForm}>*/}
+            {/*        <p>*/}
+            {/*            {banner}*/}
+            {/*        </p>*/}
+            {/*        <label htmlFor="name">Name</label>*/}
+            {/*        <input type="text" name="" id="name" onChange={handleName} value={name} />*/}
+            {/*        <label htmlFor="email">Email</label>*/}
+            {/*        <input type="email" id="email" onChange={handleEmail} value={email} />*/}
+            {/*        <label htmlFor="message">Message</label>*/}
+            {/*        <textarea type="text" name="" id="message" value={message} onChange={handleMessage}/>*/}
 
-                    <div className="send-btn">
-                        <button type="submit" >
-                            send 
-                            <i className="fa fa-paper-plane"/>
-                            {boolean ? (
-                            <b className="load"> 
-                            <img src={load1} alt="no internet connectionb"/>
-                            </b>
-                            ):
-                            ("")
-                            }
-                        </button>
-                    </div>
-                </form>
-            </div>
+            {/*        <div className="send-btn">*/}
+            {/*            <button type="submit" >*/}
+            {/*                send */}
+            {/*                <i className="fa fa-paper-plane"/>*/}
+            {/*                {boolean ? (*/}
+            {/*                <b className="load"> */}
+            {/*                <img src={load1} alt="no internet connectionb"/>*/}
+            {/*                </b>*/}
+            {/*                ):*/}
+            {/*                ("")*/}
+            {/*                }*/}
+            {/*            </button>*/}
+            {/*        </div>*/}
+            {/*    </form>*/}
+            {/*</div>*/}
         </div>
         
     </div>
