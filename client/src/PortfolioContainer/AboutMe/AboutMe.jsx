@@ -12,15 +12,16 @@ export default function AboutMe(props) {
 
     const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
     const SCREEN_CONSTANTS = {
-        description: 'I\'m Laya, really curious about computer science and always excited to learn. I helped students as a teaching assistant and got better at programming during two years freelancing. I\'m super interested in data science,machine learning, natural language processing and web programming. Teaching is my thing too – I love sharing what I know to help others. This mix of techie curiosity and a passion for teaching drives me toward a future full of new ideas.',
+        description: 'I\'m Laya, really curious about computer science and always excited to learn. I\'m super interested in data science, natural language processing and web programming. Teaching is my thing too – I love sharing what I know to help others. This mix of techie curiosity and a passion for teaching drives me toward a future full of new ideas.',
         highlights :{
             bullets: [
-                "Web and mobile development",
-                "Interactive Front End as per the design",
-                "React and React Native",
-                "Redux for State Management",
-                "Building REST API",
+                "Machine Learning and Deep Learning",
+                "Natural Language Processing",
+                "Data Mining",
+                "Federated Learning",
+                "Data valuation",
                 "Managing database",
+                "Web Development",
               ],
               heading: "Here are a Few Highlights:",
         }

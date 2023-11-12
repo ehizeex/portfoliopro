@@ -10,11 +10,14 @@ export default function Profile() {
             <div className="profile-details">
                 <div className="colz">
                     <div className="colz-icon">
-                        <a href="https://www.linkedin.com/in/laya-fakher-539473244" className="">
+                        <a href="https://www.linkedin.com/in/layafakher" className="">
                             <i className="fa fa-linkedin" />
                         </a>
                         <a href="https://github.com/layafakher/" className="">
                             <i className="fa fa-github" />
+                        </a>
+                        <a href="https://join.skype.com/invite/cLKGMCtCPv4d" className="">
+                            <i className="fa fa-skype" />
                         </a>
                         <a href="https://www.instagram.com/laya_bluece?utm_source=qr&r=nametag" className="">
                             <i className="fa fa-instagram"/>
@@ -34,22 +37,25 @@ export default function Profile() {
                     <span className="primary-text">
                         {" "}
                         <h1>
-                            <TypeAnimation 
+                            {/*Data Scientist 🎓 | Developer*/}
+                            <TypeAnimation
                             repeat={Infinity}
                             sequence={[
-                                "Enthusiastic Student 🎓",
+                                "Data Scientist 🎓",
+                                1000,
+                                "Natural Language Processing Engineer 🎓",
                                 1000,
                                 "Front End Developer 💻",
                                 1000,
                                 "Hard-Working Teacher 🎓",
-                                1000, 
+                                1000,
                                 "React/React JS Dev 🌐",
                                 1000,
                             ]}
                             />
                         </h1>
                         <span className="profile-role-tagline">
-                        Hello and Welcome to my webpage.Here you can find information about me.
+                        Hello and Welcome to my webpage. Here you can find information about me.
                         </span>
                     </span>
                 </div>

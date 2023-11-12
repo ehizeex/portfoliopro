@@ -63,7 +63,8 @@ export default function Resume(props) {
   const programmingSkillsDetails = [
       {skill:'Python', ratingPercentage:80},
       {skill:'Java', ratingPercentage:85},
-      {skill:'C/CPP', ratingPercentage:70},
+      {skill:'C/C++', ratingPercentage:70},
+      {skill:'C#', ratingPercentage:70},
       {skill:'MATLAB', ratingPercentage:60},
     {skill:'JavaScript', ratingPercentage:85},
     {skill:'React JS', ratingPercentage:80},
@@ -79,14 +80,14 @@ export default function Resume(props) {
         title:'Bitcoin Price Prediction',
         duration: { fromDate: "June 2023", toDate: "September 2023" },
         description:"Bitcoin Price Prediction using News Sentiment Analysis.",
-        subHeading: "Technologies Used: LSTM , Textblob , Deep Learning , Python",
+        subHeading: "Technologies Used: LSTM, Textblob,VADER , Deep Learning, Python",
 
     },
     {
         title: "Pitch Detection",
         duration: { fromDate: "February 2023", toDate: "March 2023" },
         description:
-          "Detecting and plotting pitch contour of a given audio file using AMDF and Autocorrelation and Cepstrum methods",
+          "Detecting and plotting pitch contour of a given audio file using AMDF, Autocorrelation and Cepstrum methods",
         subHeading:
           "Technologies Used:  MATLAB, AMDF, CEPSTRUM, AUTOCORRELATION",
     },
@@ -97,7 +98,7 @@ export default function Resume(props) {
         "Creating a random string of words of the corpus, whose length is less than 5 words,\n" +
           "and then calculating the probability of occurrence of this string of words assuming the current mini corpus and Bigram approximation.",
       subHeading:
-        "Technologies Used: Python.",
+        "Technologies Used: Python",
     },
   ]
   const resumeDetails = [
@@ -124,26 +125,26 @@ export default function Resume(props) {
     </div>,
     <div className='resume-screen-container' key='work-experience'>
       <div className='experience-container'> 
-        <ResumeHeading heading={"Freelance Programming"} subHeading={"FRONT END DEVELOPER/Web Developer"}  fromDate={'2020'} toDate={'Present'}/>
+        <ResumeHeading heading={"Natural Language Processing Engineer, Data Scientist"} subHeading={"Full Time, Smartory Labs"}  fromDate={'2023'} toDate={'Present'}/>
+
+          <div className='experience-description'>
+          <span className='resume-description-text'>
+             - Working on the resume parsing and resume ranking project.
+          </span>
+          </div>
         <div className='experience-description'>
           <span className='resume-description-text'>
-             - Developing Web Applications.
+             {/*- Developing Web Applications.*/}
           </span>
         </div>
         <div className='experience-description'>
-          <span className='resume-description-text'>
-               - Working with various frameworks such as React JS and Express JS.
-          </span>
-          <br/>
-          <span className='resume-description-text'>
-          - Integrated the web app with backend services to create new user
-              onboarding application with dynamic form content.{" "}
-          </span>
-          <br/>
-          <span className="resume-description-text">
-              - Android Programming in Android Studio.
-          </span>
-          <br/>
+          {/*<span className='resume-description-text'>*/}
+          {/*     - Working with various frameworks such as React JS.*/}
+          {/*</span>*/}
+
+          {/*<span className="resume-description-text">*/}
+          {/*    - Android Programming in Android Studio.*/}
+          {/*</span>*/}
         </div>
       </div>
     </div>,

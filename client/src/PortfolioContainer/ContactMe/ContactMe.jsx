@@ -69,7 +69,7 @@ export default function ContactMe(props) {
         <div className="central-form">
             <div className="col">
               <h2 className="title">
-                  <TypeAnimation 
+                  <TypeAnimation
                   repeat={Infinity}
                   sequence={[
                       "Get In Touch 📧",
@@ -78,6 +78,7 @@ export default function ContactMe(props) {
                       1000,
                   ]}
                   />
+                  {/*Get In Touch 📧*/}
               </h2>
               {/*<a href="#" className="">*/}
               {/*  <i className="fa fa-facebook-square" />*/}
@@ -91,11 +92,14 @@ export default function ContactMe(props) {
               {/*<a href="#" className="">*/}
               {/*    <i className="fa fa-twitter"/>*/}
               {/*</a>  */}
-                <a href="https://www.linkedin.com/in/laya-fakher-539473244" className="">
+                <a href="https://www.linkedin.com/in/layafakher" className="">
                     <i className="fa fa-linkedin" />
                 </a>
                 <a href="https://github.com/layafakher/" className="">
                     <i className="fa fa-github" />
+                </a>
+                <a href="https://join.skype.com/invite/cLKGMCtCPv4d" className="">
+                    <i className="fa fa-skype" />
                 </a>
                 <a href="https://www.instagram.com/laya_bluece?utm_source=qr&r=nametag" className="">
                     <i className="fa fa-instagram"/>
